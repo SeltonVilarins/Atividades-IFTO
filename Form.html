@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Inscrição</h1>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                
+                <label for="primeiro-nome">Primeiro Nome:</label>
+                <input type="text" id="primeiro-nome" name="primeiro-nome" required>
+
+                <label for="segundo-nome">Segundo Nome:</label>
+                <input type="text" id="segundo-nome" name="segundo-nome" required>
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Cidade, Estado e CEP" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Estado Civil e Gênero</legend>
+                
+                <label for="estado-civil">Estado Civil:</label>
+                <select id="estado-civil" name="estado-civil" required>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select>
+
+                <label>Gênero:</label>
+                <div>
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+
+                    <input type="radio" id="outro" name="genero" value="outro">
+                    <label for="outro">Outro</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolaridade</legend>
+                
+                <label for="escolaridade">Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade" required>
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                    <option value="pos-graduacao">Pós-Graduação</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perguntas Adicionais</legend>
+                
+                <label>Está trabalhando?</label>
+                <div>
+                    <input type="radio" id="trabalhando-sim" name="trabalhando" value="sim" required>
+                    <label for="trabalhando-sim">Sim</label>
+
+                    <input type="radio" id="trabalhando-nao" name="trabalhando" value="nao">
+                    <label for="trabalhando-nao">Não</label>
+                </div>
+
+                <label for="voce-e">Você é:</label>
+                <select id="voce-e" name="voce-e" required>
+                    <option value="estudante">Estudante</option>
+                    <option value="desempregado">Desempregado</option>
+                    <option value="empregado">Empregado</option>
+                    <option value="autonomo">Autônomo</option>
+                </select>
+
+                <label>Tem filhos?</label>
+                <div>
+                    <input type="radio" id="filhos-sim" name="filhos" value="sim" required>
+                    <label for="filhos-sim">Sim</label>
+
+                    <input type="radio" id="filhos-nao" name="filhos" value="nao">
+                    <label for="filhos-nao">Não</label>
+                </div>
+
+                <label for="faixa-salarial-pessoal">Faixa Salarial Pessoal:</label>
+                <select id="faixa-salarial-pessoal" name="faixa-salarial-pessoal" required>
+                    <option value="ate-1000">Até R$ 1.000</option>
+                    <option value="1000-5000">R$ 1.001 a R$ 5.000</option>
+                    <option value="5001-10000">R$ 5.001 a R$ 10.000</option>
+                    <option value="acima-10000">Acima de R$ 10.000</option>
+                </select>
+
+                <label for="faixa-salarial-familiar">Faixa Salarial Familiar:</label>
+                <select id="faixa-salarial-familiar" name="faixa-salarial-familiar" required>
+                    <option value="ate-2000">Até R$ 2.000</option>
+                    <option value="2001-8000">R$ 2.001 a R$ 8.000</option>
+                    <option value="8001-15000">R$ 8.001 a R$ 15.000</option>
+                    <option value="acima-15000">Acima de R$ 15.000</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </div>
+</body>
+</html>
